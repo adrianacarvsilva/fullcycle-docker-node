@@ -24,10 +24,12 @@ connection.connect(function(err) {
     connection.query(sql_insert, function(error, results) {});
 
     connection.query(sql_select, function(error, results) {
-        Object.keys(results).forEach(function(key) {
-            var row = results[key];
-            names+= "<h3> - " + row.name + "</h3>";
-          });
+        if(results != undefined && results != null){
+            Object.keys(results).forEach(function(key) {
+                var row = results[key];
+                names+= "<h3> - " + row.name + "</h3>";
+              });
+        }
     });
 
     connection.end(function(err) {});

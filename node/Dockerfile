@@ -1,7 +1,7 @@
 
 FROM node:15
 
-# WORKDIR /:/usr/src/app
+WORKDIR /:/usr/src/app
 
 COPY package*.json ./
 
@@ -19,4 +19,4 @@ COPY . .
 
 EXPOSE 8080
 
-# CMD ["node", "index.js"]
+CMD ["node", "index.js"]

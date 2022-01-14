@@ -32,7 +32,7 @@ services:
   node:
     build: 
       context: ./node
-      dockerfile: Dockerfile.prod
+      dockerfile: Dockerfile
     image: 270992/node
     container_name: node-server
     networks: 
