@@ -6,7 +6,6 @@ const config = {
     user: 'root',
     password: 'root',
     database: 'nodedb',
-    multipleStatements: true
 };
 
 const mysql = require('mysql');
