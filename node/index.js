@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 8080
+const port = 3000
 const config = {
     host:'db',
     user: 'root',
@@ -17,7 +17,6 @@ var sql_select="select name from people;";
 var names = "";
 
 connection.connect(function(err) {
-
     connection.query(sql, function(error, results) {});
 
     connection.query(sql_insert, function(error, results) {});
